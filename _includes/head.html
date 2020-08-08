@@ -1,0 +1,30 @@
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.title }}</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="{%if page.description%}{{page.description}}{%else%}{{site.description}}{%endif%}">
+    
+  {% if site.author %}
+  <meta name="author" content="{{ . }}">
+  {% endif %}
+
+  {% for css in site.data.plugins.css %}
+  <link rel="stylesheet" href="{{ css | relative_url }}">
+  {% endfor %}
+
+  {{site.data.plugins.css}}
+
+  <!-- Main Stylesheet -->
+  <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="{{ /assets/images/favicon.png | relative_url }} " type="image/x-icon">
+  <link rel="icon" href="{{ /assets/images/favicon.png | relative_url }} " type="image/x-icon">
+
+  <!-- google-analytics -->
+  {% if site.google-analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
+
+</head>

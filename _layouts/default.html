@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en-US">
+{% include head.html %}
+
+<body>
+	{% include preloader.html %}
+	{% include header.html %}
+	{% if page.url == "" %} <div class="py-5 d-none d-lg-block"></div> {% endif %}
+	{{content}}
+	{% include footer.html %}
+</body>
+
+</html>
