@@ -1,0 +1,27 @@
+---
+layout : default
+---
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto block shadow mb-5">
+        <h2>{{ page.title }}</h2>
+        <div class="mb-3 post-meta">
+          <a
+            href="{{ 'author/' | absolute_url }}{{ post.author | url_encode | downcase }}">{{ post.author | capitalize }}</a>,
+          {{ post.date | date: '%b %d, %Y' }}, {% for categories in page.categories %}
+          <a
+            href="{{ '/categories/' | absolute_url }}{{ post.categories | url_encode | downcase }}">{{ post.categories | capitalize }}</a>
+          {% endfor %}
+        </div>
+        {% if page.image %}
+        <img src="{{ page.image | absolute_url }}" class="img-fluid w-100 mb-4" alt="{{ page.title }}">
+        {% endif %}
+        <div class="content mb-5">
+          {{ page.content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

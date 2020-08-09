@@ -1,0 +1,63 @@
+########################### Navigation ###################################
+menu:
+  # main menu
+  main:
+    - {name: Home, link: '/'}
+    - {name: Contact, link: '/contact'}
+    - {name: Tools, link: '/tools'}
+    - name: dropdown
+      has_children : true
+      children:
+        - name : "d1"
+          link : "#"
+        - name : "d2"
+          link : "#"
+  
+  # Footer menu
+  footer:
+    - {name: Home, link: '/'}
+    - {name: Contact, link: '/contact'}
+    - {name: Tools, link: '/tools'}
+
+
+######################### Default Parameters ###########################
+
+# logo
+logo : "/assets/images/logo.svg"
+# meta data
+author : "Themefisher"
+description : "This is meta description"
+# google analitycs ID
+google_analitycs_id : "" # your id
+# contact form action
+contact_form_action : "#" # contact form works with : https://formspree.io
+# copyright
+copyright : "&copy; 2020 [Gethugothemes](https://gethugothemes.com) All Rights Reserved"
+
+# preloader
+preloader:
+  enable : true
+  preloader : "" # use png, jpg, svg or gif format
+
+# search
+search:
+  enable : true
+
+
+############################## Social Site ##########################
+social:
+  - name : "facebook"
+    icon : "ti-facebook" # themify icon pack https://themify.me/themify-icons
+    link : "#"
+    
+  - name : "twitter"
+    icon : "ti-twitter-alt" # themify icon pack https://themify.me/themify-icons
+    link : "#"
+
+  - name : "github"
+    icon : "ti-github" # themify icon pack https://themify.me/themify-icons
+    link : "#"
+
+  - name : "linkedin"
+    icon : "ti-linkedin" # themify icon pack https://themify.me/themify-icons
+    link : "#"

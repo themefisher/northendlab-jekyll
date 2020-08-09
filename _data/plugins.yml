@@ -1,0 +1,13 @@
+################ CSS Plugins #####################
+css:
+  - "/assets/plugins/bootstrap/bootstrap.min.css"
+  - "/assets/plugins/themify-icons/themify-icons.css"
+
+
+################ JS Plugins ######################
+js:
+  - "/assets/plugins/jQuery/jquery.min.js"
+  - "/assets/plugins/bootstrap/bootstrap.min.js"
+  - "/assets/plugins/search/fuse.min.js"
+  - "/assets/plugins/search/mark.js"
+  - "/assets/plugins/search/search.js"

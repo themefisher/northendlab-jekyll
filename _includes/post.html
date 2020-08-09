@@ -1,0 +1,11 @@
+<article class="mb-5">
+  <h2 class="h4"><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></h2>
+  <div class="mb-3 post-meta">
+    <a href="{{ 'author/' | absolute_url }}{{ post.author | url_encode | downcase }}">{{ post.author | capitalize }}</a>,
+    {{ post.date | date: '%b %d, %Y' }}, {% for categories in page.categories %}
+    <a href="{{ '/categories/' | absolute_url }}{{ post.categories | url_encode | downcase }}">{{ post.categories | capitalize }}</a>
+    {% endfor %}
+  </div>
+  <p>{{ post.content | truncatewords: 20 }}</p>
+  <a href="{{ post.url }}" class="btn btn-sm btn-transparent pl-0">read more</a>
+</article>

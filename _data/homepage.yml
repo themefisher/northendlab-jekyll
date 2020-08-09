@@ -1,0 +1,18 @@
+####################### banner #######################################
+banner:
+  enable : true
+  title : "Hi, I'm John Smith Doe. <br> I help people make the  worlds best software"
+  image : "/assets/images/banner/illustration.svg"
+  bg_image : "/assets/images/banner/banner-bg.svg"
+
+
+######################## call to action ###############################
+call_to_action:
+  enable : true
+  title : "Get the best hugo templates"
+  image : "/assets/images/hugo-muscot.svg"
+  description : "Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+  button:
+    enable : true
+    label : "Visit Here"
+    link : "https://gethugothemes.com/shop/"

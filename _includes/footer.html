@@ -3,25 +3,25 @@
   <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
-        <a href="{{ .Site.BaseURL }}" class="d-block pb-3"><img src="{{ .Site.Params.logo | relURL }}" class="img-fluid" alt="{{ .Site.Title }}"></a>
+        <a href="{{ site.baseurl }}" class="d-block pb-3"><img src="{{ site.data.parameters.logo | absolute_url }}" class="img-fluid" alt="{{ site.title }}"></a>
       </div>
       <div class="col-lg-4 text-center mb-4 mb-lg-0">
         <ul class="list-inline mb-0">
-          {{ range .Site.Menus.footer }}
-          <li class="list-inline-item"><a class="text-dark d-block p-2" href="{{ .URL | relative_url }}">{{ .Name }}</a></li>
-          {{ end }}
+          {% for footer in site.data.parameters.menu.footer %}
+          <li class="list-inline-item"><a class="text-dark d-block p-2" href="{{ footer.link | absolute_url }}">{{ footer.name }}</a></li>
+          {% endfor %}
         </ul>
       </div>
       <div class="col-lg-4 text-lg-right text-center mb-4 mb-lg-0">
         <ul class="list-inline social-icon mb-0">
-          {{ range .Site.Params.social }}
-          <li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
-          {{ end }}
+          {% for social in site.data.parameters.social %}
+          <li class="list-inline-item"><a href="{{ social.link | absolute_url }}"><i class="{{ social.icon }}"></i></a></li>
+          {% endfor %}
         </ul>
       </div>
     </div>
     <div class="text-center mt-4">
-      <span>{{ .Site.Params.copyright | markdownify }}</span>
+      <span>{{ site.data.parameters.copyright | markdownify }}</span>
     </div>
   </div>
 </footer>
@@ -29,13 +29,13 @@
 
 <!-- JS Plugins -->
 {% for js in site.data.plugins.js %}
-<script src="{{ js | relative_url }}"></script>
+<script src="{{ js | absolute_url }}"></script>
 {% endfor %}
 
 <!-- Main Script -->
-<script src="{{ /assets/js/script.js }}"></script>
+<script src="{{ '/assets/js/script.js' | absolute_url }}"></script>
 
 <!-- search index -->
 <script>
-  var indexURL = {{ "index.json" | relative_url }}
+  var indexURL = {{ "index.json" | absolute_url }}
 </script>
