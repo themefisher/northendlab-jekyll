@@ -1,5 +1,5 @@
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "northendlab-jekyll/" # the subpath of your site, e.g. /blog
+url: "https://themefisher.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 title: Northendlab Jekyll | Personal Blog Template
 description: >- # this means to ignore newlines until "baseurl:"
