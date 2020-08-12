@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<!-- blog -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto px-0">
+        <h2 class="mb-4">Posts are showing from <span class="text-primary">{{ page.tag }}</span></h2>
+        <div class="bg-white shadow block">
+          {% for post in page.posts %}
+          {% include post.html %}
+          {% endfor %}
+          <!-- pagination -->
+
+          <!-- /pagination -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /blog -->

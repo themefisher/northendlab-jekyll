@@ -2,22 +2,26 @@
 menu:
   # main menu
   main:
-    - {name: Home, link: '/'}
-    - {name: Contact, link: '/contact'}
-    - {name: Tools, link: '/tools'}
-    - name: dropdown
-      has_children : true
-      children:
-        - name : "d1"
-          link : "#"
-        - name : "d2"
-          link : "#"
+    - {name: Home, url: '/'}
+    - {name: Contact, url: '/contact'}
+    - {name: Tools, url: '/tools'}
+
+##### Dropdown menu ######
+
+    # - name: dropdown
+    #   submenu:
+    #   - name : "d1"
+    #     url : "#"
+    #   - name : "d2"
+    #     url : "#"
+
+##########################
   
   # Footer menu
   footer:
-    - {name: Home, link: '/'}
-    - {name: Contact, link: '/contact'}
-    - {name: Tools, link: '/tools'}
+    - {name: Home, url: '/'}
+    - {name: Contact, url: '/contact'}
+    - {name: Tools, url: '/tools'}
 
 
 ######################### Default Parameters ###########################

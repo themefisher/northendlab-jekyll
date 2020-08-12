@@ -8,7 +8,7 @@
       <div class="col-lg-4 text-center mb-4 mb-lg-0">
         <ul class="list-inline mb-0">
           {% for footer in site.data.parameters.menu.footer %}
-          <li class="list-inline-item"><a class="text-dark d-block p-2" href="{{ footer.link | absolute_url }}">{{ footer.name }}</a></li>
+          <li class="list-inline-item"><a class="text-dark d-block p-2" href="{{ footer.url | absolute_url }}">{{ footer.name }}</a></li>
           {% endfor %}
         </ul>
       </div>

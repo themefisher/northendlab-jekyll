@@ -8,12 +8,14 @@ layout : default
       <div class="col-lg-8 mx-auto block shadow mb-5">
         <h2>{{ page.title }}</h2>
         <div class="mb-3 post-meta">
-          <a
-            href="{{ 'author/' | absolute_url }}{{ post.author | url_encode | downcase }}">{{ post.author | capitalize }}</a>,
-          {{ post.date | date: '%b %d, %Y' }}, {% for categories in page.categories %}
-          <a
-            href="{{ '/categories/' | absolute_url }}{{ post.categories | url_encode | downcase }}">{{ post.categories | capitalize }}</a>
+          {% if page.author %}
+          <a href="{{ 'author/' | absolute_url }}{{ page.author | url_encode | downcase | replace: '+', '-' }}">{{ page.author | capitalize }}</a>{%endif%},
+          {{ page.date | date: '%b %d, %Y' }},
+          {% if page.tags.size >= 1 %}
+          {% for tag in page.tags %}
+          <a href="{{ '/tag/' | absolute_url }}{{ tag | url_encode | downcase }}">{{ tag | capitalize }}</a>
           {% endfor %}
+          {% endif %}
         </div>
         {% if page.image %}
         <img src="{{ page.image | absolute_url }}" class="img-fluid w-100 mb-4" alt="{{ page.title }}">
@@ -21,6 +23,10 @@ layout : default
         <div class="content mb-5">
           {{ page.content }}
         </div>
+        <!-- comments -->
+        <!-- <div class="col-lg-8 mx-auto block shadow">
+        </div> -->
+        <!-- /comments -->
       </div>
     </div>
   </div>

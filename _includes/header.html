@@ -3,7 +3,7 @@
   <div class="container">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-      <a class="navbar-brand"href="{{ site.baseurl }}"><img class="img-fluid" src="{{ site.data.parameters.logo | absolute_url }}" alt="{{ site.title }}"></a>
+      <a class="navbar-brand"href="{{ site.baseurl | absolute_url }}"><img class="img-fluid" src="{{ site.data.parameters.logo | absolute_url }}" alt="{{ site.title }}"></a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-menu h3"></i>
       </button>
@@ -11,21 +11,22 @@
       <div class="collapse navbar-collapse text-center" id="navigation">
         <ul class="navbar-nav ml-auto">
           {% for main in site.data.parameters.menu.main %}
-            {% if main.has_children %}
+            {% if main.submenu %}
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                {{ main.name }}
+              <a class="nav-link text-uppercase text-dark dropdown-toggle" href="#" id="navbarDropdown"
+                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{main.name}}
               </a>
-              <div class="dropdown-menu">
-                {% for children in site.data.parameters.menu.main.children %}
-                <a class="dropdown-item" href="{{ children.link | absolute_url }}">{{ children.name }}</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                {% for children in main.submenu %}
+                <a class="dropdown-item" href="{{children.url}}">{{children.name}}</a>
                 {% endfor %}
               </div>
             </li>
             {% else %}
+
             <li class="nav-item">
-              <a class="nav-link" href="{{ main.link | absolute_url }}">{{ main.name }}</a>
+              <a class="nav-link" href="{{ main.url | absolute_url }}">{{ main.name }}</a>
             </li>
             {% endif %}
           {% endfor %}
