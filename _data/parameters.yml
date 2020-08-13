@@ -3,8 +3,8 @@ menu:
   # main menu
   main:
   - {name: Home, url: '/'}
-  - {name: Contact, url: '/contact/'}
-  - {name: Tools, url: '/tools/'}
+  - {name: Contact, url: '/contact'}
+  - {name: Tools, url: '/tools'}
 
 ##### Dropdown menu ######
 
@@ -46,7 +46,6 @@ preloader:
 # search
 search:
   enable : true
-
 
 ############################## Social Site ##########################
 social:

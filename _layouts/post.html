@@ -24,8 +24,9 @@ layout : default
           {{ page.content }}
         </div>
         <!-- comments -->
-        <!-- <div class="col-lg-8 mx-auto block shadow">
-        </div> -->
+        {% if site.disqus_shortname %}
+          {% include disqus-comments.html %}
+        {% endif %}
         <!-- /comments -->
       </div>
     </div>

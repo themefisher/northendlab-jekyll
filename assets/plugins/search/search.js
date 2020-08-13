@@ -16,14 +16,11 @@ var fuseOptions = {
   ]
 };
 
-
 var searchQuery = param("s");
 if(searchQuery){
   $("#search-query").val(searchQuery);
   executeSearch(searchQuery);
 }
-
-
 
 function executeSearch(searchQuery){
   $.getJSON( indexURL, function( data ) {

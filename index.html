@@ -8,7 +8,8 @@ layout: default
 
 <!-- banner -->
 {% if site.data.homepage.banner.enable %}
-<section class="banner bg-cover" style="background-image: url('{{ site.data.homepage.banner.bg_image | absolute_url }}');">
+<section class="banner bg-cover"
+  style="background-image: url('{{ site.data.homepage.banner.bg_image | absolute_url }}');">
   <img src="{{ site.data.homepage.banner.image | absolute_url }}" class="img-fluid illustration" alt="">
   <div class="container">
     <div class="row">
@@ -30,9 +31,11 @@ layout: default
     <div class="row">
       <div class="col-lg-8 mx-auto px-0">
         <div class="bg-white shadow block">
-          {% for post in site.posts %}
+          {% for post in paginator.posts %}
           {% include post.html %}
           {% endfor %}
+          <!-- pagination -->
+          {% include pagination.html %}
         </div>
       </div>
     </div>
