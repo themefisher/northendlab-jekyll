@@ -13,7 +13,7 @@ layout : default
           {{ page.date | date: '%b %d, %Y' }},
           {% if page.tags.size >= 1 %}
           {% for tag in page.tags %}
-          <a href="{{ '/tag/' | absolute_url }}{{ tag | url_encode | downcase }}">{{ tag | capitalize }}</a>
+          <a href="{{ '/tag/' | absolute_url }}{{ tag | url_encode | downcase | replace: '+', '-' }}">{{ tag | capitalize }}</a>
           {% endfor %}
           {% endif %}
         </div>
