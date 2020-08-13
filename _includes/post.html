@@ -1,5 +1,5 @@
 <article class="mb-5">
-  <h2 class="h4"><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></h2>
+  <h2 class="h4"><a class="post-title" href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
   <div class="mb-3 post-meta">
     {% if post.author %}
     <a href="{{ 'author/' | absolute_url }}{{ post.author | url_encode | downcase | replace: '+', '-' }}">{{ post.author | capitalize }}</a>{%endif%},
@@ -11,5 +11,5 @@
     {% endif %}
   </div>
   <p>{{ post.content | truncatewords: 20 }}</p>
-  <a href="{{ post.url }}" class="btn btn-sm btn-transparent pl-0">read more</a>
+  <a href="{{ post.url | absolute_url }}" class="btn btn-sm btn-transparent pl-0">read more</a>
 </article>
