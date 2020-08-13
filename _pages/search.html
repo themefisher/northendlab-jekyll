@@ -9,19 +9,11 @@ layout: default
         <h2>Search result for
           <span class="text-primary">
             <script>
-              var str=(window.location.search).substr(3);var result=str.replace("+"," ");document.write(result);</script>
+              var str=(window.location.search).substr(7);var result=str.replace("+"," ");document.write(result);</script>
           </span>
         </h2>
         <div class="block shadow">
-          <div id="search-results"></div>
-          <script id="search-result-template" type="text/x-js-template">
-            <div class="py-4 border-bottom" id="summary-${key}">
-              <h4><a href="${link}">${title}</a></h4>
-              <p>${snippet}</p>
-              ${ isset tags }<p>Tags: ${tags}</p>${ end }
-              ${ isset categories }<p>Categories: ${categories}</p>${ end }
-            </div>
-        </script>
+          <ul class="list-unstyled" id="search-results"></ul>
         </div>
       </div>
     </div>
@@ -34,7 +26,7 @@ layout: default
       "{{ post.url | slugify }}": {
         "title": "{{ post.title | xml_escape }}",
         "author": "{{ post.author | xml_escape }}",
-        "tag": "{{ post.tag | xml_escape }}",
+        "tags": "{%for tag in post.tags%}{{tag|xml_escape}} {%endfor%}",
         "content": {{ post.content | strip_html | strip_newlines | jsonify }},
         "url": "{{ post.url | xml_escape }}",
         "date": "{{ post.date | date: '%b %d, %Y'}}"

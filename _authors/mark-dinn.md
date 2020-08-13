@@ -1,6 +1,6 @@
 ---
 title : "Mark Dinn"
-image : "/assets/images/author/john-doe.jpg"
+image : "/assets/images/author/mark-dinn.jpg"
 description : "Front end developer"
 ---
 
