@@ -2,12 +2,7 @@
 layout: tools
 title: "Tools"
 description : "this is meta description"
-
-craps:
-  - name : a
-  - name : b
-  - name : c
-
+#### tools ####
 tools:
 # tool category
 - title: Dev Tools

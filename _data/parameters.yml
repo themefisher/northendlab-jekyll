@@ -2,26 +2,26 @@
 menu:
   # main menu
   main:
-    - {name: Home, url: '/'}
-    - {name: Contact, url: '/contact'}
-    - {name: Tools, url: '/tools'}
+  - {name: Home, url: '/'}
+  - {name: Contact, url: '/contact/'}
+  - {name: Tools, url: '/tools/'}
 
 ##### Dropdown menu ######
 
-    # - name: dropdown
-    #   submenu:
-    #   - name : "d1"
-    #     url : "#"
-    #   - name : "d2"
-    #     url : "#"
+  # - name: dropdown
+  #   submenu:
+  #   - name : "d1"
+  #     url : "#"
+  #   - name : "d2"
+  #     url : "#"
 
 ##########################
   
   # Footer menu
   footer:
-    - {name: Home, url: '/'}
-    - {name: Contact, url: '/contact'}
-    - {name: Tools, url: '/tools'}
+  - {name: Home, url: '/'}
+  - {name: Contact, url: '/contact'}
+  - {name: Tools, url: '/tools'}
 
 
 ######################### Default Parameters ###########################
