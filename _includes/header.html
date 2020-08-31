@@ -3,7 +3,7 @@
   <div class="container">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-      <a class="navbar-brand" href="{{ site.baseurl }}"><img class="img-fluid" src="{{ site.data.parameters.logo | absolute_url }}" alt="{{ site.title }}"></a>
+      <a class="navbar-brand" href="{{ site.baseurl }}"><img class="img-fluid" src="{{ site.data.parameters.logo | relative_url }}" alt="{{ site.title }}"></a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-menu h3"></i>
       </button>
@@ -26,7 +26,7 @@
             {% else %}
 
             <li class="nav-item">
-              <a class="nav-link" href="{{ main.url | absolute_url }}">{{ main.name }}</a>
+              <a class="nav-link" href="{{ main.url | relative_url }}">{{ main.name }}</a>
             </li>
             {% endif %}
           {% endfor %}
@@ -36,7 +36,7 @@
         <div class="search">
           <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
           <div class="search-wrapper">
-            <form action="{{ 'search' | absolute_url }}" class="h-100">
+            <form action="{{ 'search' | relative_url }}" class="h-100">
               <input class="search-box px-4" id="search-box" name="query" type="search" placeholder="Type & Hit Enter...">
             </form>
             <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>

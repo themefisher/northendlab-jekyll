@@ -9,16 +9,16 @@ layout : default
         <h2>{{ page.title }}</h2>
         <div class="mb-3 post-meta">
           {% if page.author %}
-          <a href="{{ 'author/' | absolute_url }}{{ page.author | url_encode | downcase | replace: '+', '-' }}">{{ page.author | capitalize }}</a>{%endif%},
+          <a href="{{ 'author/' | relative_url }}{{ page.author | url_encode | downcase | replace: '+', '-' }}">{{ page.author | capitalize }}</a>{%endif%},
           {{ page.date | date: '%b %d, %Y' }},
           {% if page.tags.size >= 1 %}
           {% for tag in page.tags %}
-          <a href="{{ '/tag/' | absolute_url }}{{ tag | url_encode | downcase | replace: '+', '-' }}">{{ tag | capitalize }}</a>
+          <a href="{{ '/tag/' | relative_url }}{{ tag | url_encode | downcase | replace: '+', '-' }}">{{ tag | capitalize }}</a>
           {% endfor %}
           {% endif %}
         </div>
         {% if page.image %}
-        <img src="{{ page.image | absolute_url }}" class="img-fluid w-100 mb-4" alt="{{ page.title }}">
+        <img src="{{ page.image | relative_url }}" class="img-fluid w-100 mb-4" alt="{{ page.title }}">
         {% endif %}
         <div class="content mb-5">
           {{ page.content }}

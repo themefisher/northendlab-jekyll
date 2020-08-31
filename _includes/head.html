@@ -10,15 +10,15 @@
   {% endif %}
 
   {% for css in site.data.plugins.css %}
-  <link rel="stylesheet" href="{{ css | absolute_url }}">
+  <link rel="stylesheet" href="{{ css | relative_url }}">
   {% endfor %}
 
   <!-- Main Stylesheet -->
-  <link href="{{ '/assets/scss/style.css' | absolute_url }}" rel="stylesheet">
+  <link href="{{ '/assets/scss/style.css' | relative_url }}" rel="stylesheet">
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="{{ /assets/images/favicon.png | absolute_url }} " type="image/x-icon">
-  <link rel="icon" href="{{ /assets/images/favicon.png | absolute_url }} " type="image/x-icon">
+  <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | relative_url }} " type="image/x-icon">
+  <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }} " type="image/x-icon">
 
   <!-- google-analytics -->
   {% if site.google-analytics %}

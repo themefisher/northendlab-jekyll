@@ -9,15 +9,15 @@ layout: default
 <!-- banner -->
 {% if site.data.homepage.banner.enable %}
 <section class="banner bg-cover"
-  style="background-image: url('{{ site.data.homepage.banner.bg_image | absolute_url }}');">
-  <img src="{{ site.data.homepage.banner.image | absolute_url }}" class="img-fluid illustration" alt="">
+  style="background-image: url('{{ site.data.homepage.banner.bg_image | relative_url }}');">
+  <img src="{{ site.data.homepage.banner.image | relative_url }}" class="img-fluid illustration" alt="">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 mb-5 mb-lg-0">
         <h1>{{ site.data.homepage.banner.title }}</h1>
       </div>
       <div class="col-lg-6 illustration-mobile">
-        <img src="{{ site.data.homepage.banner.image | absolute_url }}" class="img-fluid" alt="">
+        <img src="{{ site.data.homepage.banner.image | relative_url }}" class="img-fluid" alt="">
       </div>
     </div>
   </div>
@@ -51,12 +51,12 @@ layout: default
       <div class="col-lg-8 mx-auto">
         <div class="row shadow bg-white p-5">
           <div class="col-md-4 text-center text-md-left mb-4 mb-lg-0">
-            <img src="{{ site.data.homepage.call_to_action.image | absolute_url }}" class="mr-4" alt=""></div>
+            <img src="{{ site.data.homepage.call_to_action.image | relative_url }}" class="mr-4" alt=""></div>
           <div class="col-md-8 text-center text-md-left">
             <h3 class="mt-0">{{ site.data.homepage.call_to_action.title }}</h3>
             <p>{{ site.data.homepage.call_to_action.description }}</p>
             {% if site.data.homepage.call_to_action.button.enable %}
-            <a href="{{ site.data.homepage.call_to_action.button.link | absolute_url }}"
+            <a href="{{ site.data.homepage.call_to_action.button.link | relative_url }}"
               class="btn btn-primary">{{ site.data.homepage.call_to_action.button.label }}</a>
             {% endif %}
           </div>

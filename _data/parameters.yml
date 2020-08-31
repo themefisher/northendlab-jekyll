@@ -36,7 +36,7 @@ google_analitycs_id : "" # your id
 # contact form action
 contact_form_action : "#" # contact form works with : https://formspree.io
 # copyright
-copyright : "&copy; 2020 [Gethugothemes](https://gethugothemes.com) All Rights Reserved"
+copyright : "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)"
 
 # preloader
 preloader:

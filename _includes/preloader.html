@@ -2,7 +2,7 @@
 {{ "<!-- preloader start -->" | safeHTML }}
 <div class="preloader">
   {% if site.data.preloader.preloader != "" %}
-  <img src="{{ site.data.preloader.preloader | absolute_url }} " alt="preloader">
+  <img src="{{ site.data.preloader.preloader | relative_url }} " alt="preloader">
   {% endif %}
 </div>
 {{ "<!-- preloader end -->" | safeHTML }}

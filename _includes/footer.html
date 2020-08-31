@@ -3,19 +3,19 @@
   <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
-        <a href="{{ site.baseurl }}" class="d-block pb-3"><img src="{{ site.data.parameters.logo | absolute_url }}" class="img-fluid" alt="{{ site.title }}"></a>
+        <a href="{{ site.baseurl }}" class="d-block pb-3"><img src="{{ site.data.parameters.logo | relative_url }}" class="img-fluid" alt="{{ site.title }}"></a>
       </div>
       <div class="col-lg-4 text-center mb-4 mb-lg-0">
         <ul class="list-inline mb-0">
           {% for footer in site.data.parameters.menu.footer %}
-          <li class="list-inline-item"><a class="text-dark d-block p-2" href="{{ footer.url | absolute_url }}">{{ footer.name }}</a></li>
+          <li class="list-inline-item"><a class="text-dark d-block p-2" href="{{ footer.url | relative_url }}">{{ footer.name }}</a></li>
           {% endfor %}
         </ul>
       </div>
       <div class="col-lg-4 text-lg-right text-center mb-4 mb-lg-0">
         <ul class="list-inline social-icon mb-0">
           {% for social in site.data.parameters.social %}
-          <li class="list-inline-item"><a href="{{ social.link | absolute_url }}"><i class="{{ social.icon }}"></i></a></li>
+          <li class="list-inline-item"><a href="{{ social.link | relative_url }}"><i class="{{ social.icon }}"></i></a></li>
           {% endfor %}
         </ul>
       </div>
@@ -29,13 +29,13 @@
 
 <!-- JS Plugins -->
 {% for js in site.data.plugins.js %}
-<script src="{{ js | absolute_url }}"></script>
+<script src="{{ js | relative_url }}"></script>
 {% endfor %}
 
 <!-- Main Script -->
-<script src="{{ '/assets/js/script.js' | absolute_url }}"></script>
+<script src="{{ '/assets/js/script.js' | relative_url }}"></script>
 
 <!-- search index -->
 <script>
-  var indexURL = {{ "search.json" | absolute_url }}
+  var indexURL = {{ "search.json" | relative_url }}
 </script>

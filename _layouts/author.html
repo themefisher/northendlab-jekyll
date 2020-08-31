@@ -6,7 +6,7 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto text-center block shadow">
-        <img src="{{ page.image | absolute_url }}" alt="{{page.title}}" class="img-fluid d-block mx-auto rounded-circle mb-4 author-thumb">
+        <img src="{{ page.image | relative_url }}" alt="{{page.title}}" class="img-fluid d-block mx-auto rounded-circle mb-4 author-thumb">
         <h4>{{ page.title }}</h4>
         <div class="content">
           {{ page.content }}
