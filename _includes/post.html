@@ -6,7 +6,7 @@
     {{ post.date | date: '%b %d, %Y' }},
     {% if post.tags.size >= 1 %}
     {% for tag in post.tags %}
-    <a href="{{ '/tag/' | relative_url }}{{ tag | slugify }}">{{ tag | capitalize }}</a>
+    <a href="{{ 'tag/' | relative_url }}{{ tag | slugify }}">{{ tag | capitalize }}</a>
     {% endfor %}
     {% endif %}
   </div>
