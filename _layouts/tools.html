@@ -8,14 +8,14 @@ layout: default
       <div class="col-3">
         <div class="nav nav-tab flex-column" role="tablist" aria-orientation="vertical">
           {% for tooltab in page.tools %}
-          <a class="nav-link {% if forloop.first %} active {% endif %}" data-toggle="pill" href="#{{ tooltab.title | url_encode | replace: '+', '-' }}" role="tab">{{ tooltab.title }}</a>
+          <a class="nav-link {% if forloop.first %} active {% endif %}" data-toggle="pill" href="#{{ tooltab.title | slugify }}" role="tab">{{ tooltab.title }}</a>
           {% endfor %}
         </div>
       </div>
       <div class="col-9">
         <div class="tab-content">
           {% for tools in page.tools %}
-          <div class="tab-pane fade {% if forloop.first %} show active {% endif %}" id="{{ tools.title | url_encode | replace: '+', '-' }}" role="tabpanel">
+          <div class="tab-pane fade {% if forloop.first %} show active {% endif %}" id="{{ tools.title | slugify }}" role="tabpanel">
             <div class="row">
               {% for tool in tools.tool %}
               <div class="col-md-6 mb-4">
