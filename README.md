@@ -1,6 +1,8 @@
 # Northendlab Jekyll
 
-[live demo](https://themefisher.github.io/northendlab-jekyll/)
+![northendlab](https://demo.gethugothemes.com/thumbnails/northendlab.png)
+
+[live demo](https://demo.gethugothemes.com/northendlab/)
 
 ### Jekyll Install
 
@@ -12,7 +14,7 @@ After installing Jekyll on your pc, [download](https://github.com/themefisher/no
 
 ### Main Configuration
 
-You don't need to change anything in the main configuration (`_config.yml`), just you need to change the`baseURL` when you host this template.
+You don't need to change anything in the main configuration (`_config.yml`), just you need to change the `baseURL` when you host this template.
 
 You will find every parameter in `_data/parameters.yml`` this file.
 
