@@ -1,8 +1,8 @@
 # Northendlab Jekyll
 
-![northendlab](https://demo.gethugothemes.com/thumbnails/northendlab.png)
+![northendlab](https://demo.gethugothemes.com/thumbnails/northendlab-light.png)
 
-[live demo](https://demo.gethugothemes.com/northendlab/)
+[live demo](https://demo.gethugothemes.com/northendlab-light/)
 
 ### Jekyll Install
 
