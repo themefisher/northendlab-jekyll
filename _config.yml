@@ -1,4 +1,4 @@
-baseurl: "/northendlab-jekyll/" # the subpath of your site, e.g. blog/
+baseurl: "/northendlab-jekyll" # the subpath of your site, e.g. blog/
 url: "https://demo.themefisher.com" # the base hostname & protocol for your site, e.g. http://example.com/
 
 title: Northendlab Jekyll | Personal Blog Template
