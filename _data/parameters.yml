@@ -2,11 +2,11 @@
 menu:
   # main menu
   main:
-  - {name: Home, url: '/'}
-  - {name: Contact, url: '/contact'}
-  - {name: Tools, url: '/tools'}
+    - { name: Home, url: "/" }
+    - { name: Contact, url: "contact/" }
+    - { name: Tools, url: "tools/" }
 
-##### Dropdown menu ######
+  ##### Dropdown menu ######
 
   # - name: dropdown
   #   submenu:
@@ -15,52 +15,51 @@ menu:
   #   - name : "d2"
   #     url : "#"
 
-##########################
-  
+  ##########################
+
   # Footer menu
   footer:
-  - {name: Home, url: '/'}
-  - {name: Contact, url: '/contact'}
-  - {name: Tools, url: '/tools'}
-
+    - { name: Home, url: "/" }
+    - { name: Contact, url: "contact/" }
+    - { name: Tools, url: "tools/" }
 
 ######################### Default Parameters ###########################
 
 # logo
-logo : "/assets/images/logo.svg"
+logo: "/assets/images/logo.svg"
 # meta data
-author : "Themefisher"
-description : "This is meta description"
+author: "Themefisher"
+description: "This is meta description"
 # google analitycs ID
-google_analitycs_id : "" # your id
+google_analitycs_id: "" # your id
 # contact form action
-contact_form_action : "#" # contact form works with : https://formspree.io
+contact_form_action: "#" # contact form works with : https://formspree.io
 # copyright
-copyright : "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)"
+copyright: "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)"
 
 # preloader
 preloader:
-  enable : true
-  preloader : "" # use png, jpg, svg or gif format
+  enable: true
+  preloader: "" # use png, jpg, svg or gif format
 
 # search
 search:
-  enable : true
+  enable: true
 
 ############################## Social Site ##########################
 social:
-  - name : "facebook"
-    icon : "ti-facebook" # themify icon pack https://themify.me/themify-icons
-    link : "#"
-    
-  - name : "twitter"
-    icon : "ti-twitter-alt" # themify icon pack https://themify.me/themify-icons
-    link : "#"
+  - name: "facebook"
+    icon: "ti-facebook" # themify icon pack https://themify.me/themify-icons
+    link: "#"
 
-  - name : "github"
-    icon : "ti-github" # themify icon pack https://themify.me/themify-icons
-    link : "#"
+  - name: "twitter"
+    icon: "ti-twitter-alt" # themify icon pack https://themify.me/themify-icons
+    link: "#"
 
-  - name : "linkedin"
-    icon : "ti-linkedin" # themify icon pack https://themify.me/themify-icons
-    link : "#"
+  - name: "github"
+    icon: "ti-github" # themify icon pack https://themify.me/themify-icons
+    link: "#"
+
+  - name: "linkedin"
+    icon: "ti-linkedin" # themify icon pack https://themify.me/themify-icons
+    link: "#"

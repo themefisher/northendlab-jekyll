@@ -3,7 +3,6 @@ css:
   - "/assets/plugins/bootstrap/bootstrap.min.css"
   - "/assets/plugins/themify-icons/themify-icons.css"
 
-
 ################ JS Plugins ######################
 js:
   - "/assets/plugins/jQuery/jquery.min.js"
