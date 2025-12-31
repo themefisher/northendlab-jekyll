@@ -1,6 +1,6 @@
 # Northendlab Jekyll
 
-![northendlab](https://demo.themefisher.com/thumbnails/northendlab-jekyll.png)
+![northendlab](https://assets.teamosis.com/thumbs/northendlab-jekyll.png)
 
 [live demo](https://demo.themefisher.com/northendlab-jekyll/)
 
@@ -33,6 +33,20 @@ This is the same process for the blog post. Copy an existing author file, and re
 ### Customize Other Pages
 
 Another page customization (like about, contact) is very easy. You can see the other page in the `_pages/` folder. Find the page that you want to customize, and change the content from it. If this page has any loop item, then follow the existing loop to create a new one.
+
+<!-- edit with sitepins -->
+
+## 📝 Edit Content with CMS
+
+This template comes pre-configured with [**Sitepins**](https://sitepins.com), a Git-based Headless CMS designed for seamless content management. You can update your website’s text, images, and configuration without touching a single line of code.
+
+**How to get started:**
+
+Click the Edit with Sitepins button below and follow the on-screen instructions to start editing your content visually.
+
+  <a target="_blank" href="https://app.sitepins.com/new/clone?name=Northendlab%20Jekyll&repository=https://github.com/themefisher/northendlab-jekyll/">
+    <img src="https://sitepins.com/button.svg" alt="Edit with Sitepins">
+  </a>
 
 ### Reporting Issues
 
