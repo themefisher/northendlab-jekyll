@@ -1,6 +1,6 @@
 # Northendlab Jekyll
 
-![northendlab](https://assets.teamosis.com/thumbs/northendlab-jekyll.png)
+![northendlab](https://assets.teamosis.com/thumbs/northendlab.png)
 
 [live demo](https://demo.themefisher.com/northendlab-jekyll/)
 
