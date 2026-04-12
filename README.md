@@ -38,13 +38,13 @@ Another page customization (like about, contact) is very easy. You can see the o
 
 ## 📝 Edit Content with CMS
 
-This template comes pre-configured with [**Sitepins**](https://sitepins.com), a Git-based Headless CMS designed for seamless content management. You can update your website’s text, images, and configuration without touching a single line of code.
+This template comes pre-configured with [**Sitepins**](https://sitepins.com/?aff=tfgithub), a Git-based Headless CMS designed for seamless content management. You can update your website’s text, images, and configuration without touching a single line of code.
 
 **How to get started:**
 
 Click the Edit with Sitepins button below and follow the on-screen instructions to start editing your content visually.
 
-  <a target="_blank" href="https://app.sitepins.com/new/clone?name=Northendlab%20Jekyll&repository=https://github.com/themefisher/northendlab-jekyll/">
+  <a target="_blank" href="https://app.sitepins.com/new/clone?name=Northendlab%20Jekyll&repository=https://github.com/themefisher/northendlab-jekyll/?aff=tfgithub">
     <img src="https://sitepins.com/button.svg" alt="Edit with Sitepins">
   </a>
 
